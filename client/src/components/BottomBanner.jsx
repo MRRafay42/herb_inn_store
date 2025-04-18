@@ -1,7 +1,7 @@
 import React from "react";
 import { assets, features } from "../assets/assets";
 
-const Bottombanner = () => {
+const BottomBanner = () => {
   return (
     <div className="relative mt-24">
       <img
@@ -41,4 +41,4 @@ const Bottombanner = () => {
   );
 };
 
-export default Bottombanner;
+export default BottomBanner;
