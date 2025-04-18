@@ -60,7 +60,7 @@ export const getUserOrders = async (req, res) => {
   }
 };
 
-// Get all Orders(for saller/admin):/api/order/seller
+// Get all Orders(for seller/admin):/api/order/seller
 export const getAllOrders = async (req,res)=>{
 try {
     const orders = await Order.find({
