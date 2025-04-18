@@ -7,13 +7,10 @@ const Orders = () => {
   const { currency, axios } = useAppContext();
 
   const [orders, setOrders] = useState([]);
-  axios.defaults.withCredentials = true;
+
   const fetchOrders = async () => {
     try {
-      const { data } = await axios.get("/api/order/seller", {
-        withCredentials: true,
-      });
-
+      const { data } = await axios.get("/api/order/seller");
       if (data.success) {
         setOrders(data.orders);
       } else {
