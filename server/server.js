@@ -20,7 +20,7 @@ await connectCloudinary()
 
 
 // allowed multiple origin
-const allowedOrigins = ['http://localhost:5173','https://herbs-inn.vercel.app']
+const allowedOrigins = ['http://localhost:5173','https://herbsinn.vercel.app']
 // middle ware configuration
 
 app.use(express.json())
