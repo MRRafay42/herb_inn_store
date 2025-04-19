@@ -30,7 +30,7 @@ app.use(cors({origin:allowedOrigins,credentials:true}));
 app.get('/',(req,res)=>res.send("Api is working"))
 app.use('/api/user',userRouter)
 app.use('/api/seller',sellerRouter)
-app.use('/api/product',productRouter)//issue after this
+app.use('/api/product',productRouter)
 app.use('/api/cart',cartRouter)
 app.use('/api/address',addressRouter)
 app.use('/api/order',orderRouter)
