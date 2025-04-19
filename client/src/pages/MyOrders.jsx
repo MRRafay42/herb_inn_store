@@ -8,17 +8,21 @@ const MyOrders = () => {
   //fetch orders
   const fetchMyOrders = async () => {
     try {
-      const { data } = await axios.get("/api/order/user");
+      const { data } = await axios.get("/api/order/user", {
+        withCredentials: true, // This sends cookies with the request
+      });
       if (data.success) {
         setMyOrders(data.orders);
       } else {
         console.error("Failed to fetch orders:", data.message);
-        // Optionally show error to user
+        toast.error(data.message || "Failed to fetch orders");
       }
     } catch (error) {
       console.error("Error fetching orders:", error);
-      // Optionally show error to user
-      toast.error("Failed to load orders. Please try again.");
+      toast.error(
+        error.response?.data?.message ||
+          "Failed to load orders. Please try again."
+      );
     }
   };
 

@@ -40,24 +40,24 @@ return res.json({
 }
 
 // get user By Id:/api/order/user
-export const getUserOrders = async (req,res)=>{
-try {
-    const {userId} = req.body
+export const getUserOrders = async (req, res) => {
+  try {
+    const userId = req.userId; // Get from auth middleware instead of body
 
     const orders = await Order.find({
-        userId,
-        $or:[{paymentType:'COD'},{isPaid:true}]
+      userId,
+      $or: [{paymentType: 'COD'}, {isPaid: true}]
     }).populate("items.product address").sort({
-        createdAt:-1
+      createdAt: -1
     })
-    res.json({success:true,orders})
-
-} catch (error) {
+    
+    res.json({success: true, orders})
+  } catch (error) {
     res.json({
-    success:false,
-    message:error.message
-})
-}
+      success: false,
+      message: error.message
+    })
+  }
 }
 
 // Get all Orders(for saller/admin):/api/order/seller
