@@ -82,7 +82,7 @@ const Navbar = () => {
             Login
           </button>
         ) : (
-          <div className="relative group ">
+          <div className="relative group cursor-pointer ">
             <img src={assets.profile_icon} className="w-10 " alt="avatar" />
             <span className="absolute bottom-0 right-0 block h-2.5 w-2.5 rounded-full bg-green-500 ring-2 ring-white"></span>
             <ul className="hidden group-hover:block absolute top-10 right-0 bg-white shadow border border-gray-500 py-2.5 w-50 rounded-md text-sm z-40">
@@ -134,7 +134,7 @@ const Navbar = () => {
         <div
           className={`${
             open ? "flex" : "hidden"
-          } absolute top-[60px] left-0 w-full bg-white shadow-md py-4 flex-col items-start gap-2 px-5 text-sm md:hidden`}
+          } absolute top-[90px] left-0 w-full bg-white shadow-md py-4 flex-col items-start gap-2 px-5 text-sm md:hidden`}
         >
           <NavLink to="/" onClick={() => setOpen(false)}>
             Home
