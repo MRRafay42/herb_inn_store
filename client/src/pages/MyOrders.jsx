@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useAppContext } from "../context/AppContext";
-import toast from "react-hot-toast";
 
 const MyOrders = () => {
   const [myOrders, setMyOrders] = useState([]);
@@ -11,22 +10,14 @@ const MyOrders = () => {
       const { data } = await axios.get("/api/order/user");
       if (data.success) {
         setMyOrders(data.orders);
-      } else {
-        console.error("Failed to fetch orders:", data.message);
-        // Optionally show error to user
       }
     } catch (error) {
-      console.error("Error fetching orders:", error);
-      // Optionally show error to user
-      toast.error("Failed to load orders. Please try again.");
+      console.log(error);
     }
   };
-
   useEffect(() => {
     if (user) {
       fetchMyOrders();
-    } else {
-      setMyOrders([]); // Clear orders if user logs out
     }
   }, [user]);
 

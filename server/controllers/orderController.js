@@ -41,24 +41,23 @@ return res.json({
 
 // get user By Id:/api/order/user
 export const getUserOrders = async (req, res) => {
-  try {
-    const userId = req.userId; // Get from auth middleware instead of body
-
-    const orders = await Order.find({
-      userId,
-      $or: [{paymentType: 'COD'}, {isPaid: true}]
-    }).populate("items.product address").sort({
-      createdAt: -1
-    })
-    
-    res.json({success: true, orders})
-  } catch (error) {
-    res.json({
-      success: false,
-      message: error.message
-    })
-  }
-}
+   try {
+     const orders = await Order.find({ userId: req.userId })
+       .populate('items.product') // Populate product details if needed
+       .sort({ createdAt: -1 }); // Newest orders first
+ 
+     res.json({
+       success: true,
+       orders
+     });
+   } catch (error) {
+     console.error(error);
+     res.status(500).json({
+       success: false,
+       message: 'Error fetching orders'
+     });
+   }
+ };
 
 // Get all Orders(for saller/admin):/api/order/seller
 export const getAllOrders = async (req,res)=>{
