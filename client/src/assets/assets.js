@@ -20,18 +20,18 @@ import box_icon from "./box_icon.svg";
 import trust_icon from "./trust_icon.svg";
 import black_arrow_icon from "./black_arrow_icon.svg";
 import white_arrow_icon from "./white_arrow_icon.svg";
-import main_banner_bg from "./main_banner_bg.png";
-import main_banner_bg_sm from "./main_banner_bg_sm.png";
+import main_banner_bg from "./upperbanner.jpg";
+import main_banner_bg_sm from "./upperbanner.jpg";
 import bottom_banner_image from "./bottom_banner_image.png";
 import bottom_banner_image_sm from "./bottom_banner_image_sm.png";
 import add_address_iamge from "./add_address_image.svg";
-import organic_vegitable_image from "./organic_vegitable_image.png";
-import fresh_fruits_image from "./fresh_fruits_image.png";
-import bottles_image from "./bottles_image.png";
-import maggi_image from "./maggi_image.png";
-import dairy_product_image from "./dairy_product_image.png";
-import bakery_image from "./bakery_image.png";
-import grain_image from "./grain_image.png";
+import organicoil from "./naturaloilicon.png"
+import beautyproducts from "./beautyicon.png"
+import naturalsupplement from "./supplementicon.png"
+import maggi_image from "./male.jpg";
+import dairy_product_image from "./female.jpg";
+import bakery_image from "./bones.png";
+import grain_image from "./imune.png";
 import potato_image_1 from "./potato_image_1.png";
 import potato_image_2 from "./potato_image_2.png";
 import potato_image_3 from "./potato_image_3.png";
@@ -103,43 +103,43 @@ export const assets = {
 
 export const categories = [
   {
-    text: "Organic veggies",
+    text: "Beauty Products",
     path: "Vegetables",
-    image: organic_vegitable_image,
+    image: beautyproducts,
     bgColor: "#FEF6DA",
   },
   {
-    text: "Fresh Fruits",
+    text: "Natural Supplements",
     path: "Fruits",
-    image: fresh_fruits_image,
+    image: naturalsupplement,
     bgColor: "#FEE0E0",
   },
   {
-    text: "Oils",
-    path: "Oil",
-    image: bottles_image,
+    text: "Natural Oils",
+    path: "NaturalOil",
+    image: organicoil,
     bgColor: "#F0F5DE",
   },
   {
-    text: "Instant Food",
+    text: "Male Products",
     path: "Instant",
     image: maggi_image,
     bgColor: "#E1F5EC",
   },
   {
-    text: "Dairy Products",
+    text: "Female Products",
     path: "Dairy",
     image: dairy_product_image,
     bgColor: "#FEE6CD",
   },
   {
-    text: "Bakery & Breads",
+    text: "Bones & Joints",
     path: "Bakery",
     image: bakery_image,
     bgColor: "#E0F6FE",
   },
   {
-    text: "Grains & Cereals",
+    text: "Imune Systeam",
     path: "Grains",
     image: grain_image,
     bgColor: "#F1E3F9",
