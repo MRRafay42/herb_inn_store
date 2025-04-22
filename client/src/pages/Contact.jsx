@@ -27,7 +27,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="text-lg font-medium text-gray-900">Phone</h3>
-                <p className="text-gray-500">+1 (555) 123-4567</p>
+                <p className="text-gray-500">03004219745</p>
               </div>
             </div>
 
@@ -41,7 +41,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="text-lg font-medium text-gray-900">Email</h3>
-                <p className="text-gray-500">support@clinicstore.com</p>
+                <p className="text-gray-500">faheemshabbir39@gmail.com</p>
               </div>
             </div>
 
@@ -56,7 +56,7 @@ const Contact = () => {
               <div>
                 <h3 className="text-lg font-medium text-gray-900">Address</h3>
                 <p className="text-gray-500">
-                  123 Health Street, Medical City, MC 12345
+                  Faiz Road Muslim Town Lahore,pakistan
                 </p>
               </div>
             </div>
@@ -73,8 +73,7 @@ const Contact = () => {
                 <h3 className="text-lg font-medium text-gray-900">
                   Working Hours
                 </h3>
-                <p className="text-gray-500">Mon-Fri: 9:00 AM - 6:00 PM</p>
-                <p className="text-gray-500">Sat: 10:00 AM - 4:00 PM</p>
+                <p className="text-gray-500">Mon-Fri: 6:00 AM - 9:00 PM</p>
               </div>
             </div>
 
@@ -83,7 +82,10 @@ const Contact = () => {
                 Follow Us
               </h3>
               <div className="flex space-x-4">
-                <a href="#" className="bg-blue-100 p-3 rounded-full">
+                <a
+                  href="https://www.facebook.com/people/Herbs-Inn-Clinic/61564880276874/"
+                  className="bg-blue-100 p-3 rounded-full"
+                >
                   <img
                     src="https://cdn-icons-png.flaticon.com/512/124/124010.png"
                     alt="Facebook"
@@ -97,7 +99,10 @@ const Contact = () => {
                     className="h-5 w-5"
                   />
                 </a>
-                <a href="#" className="bg-blue-100 p-3 rounded-full">
+                <a
+                  href="https://www.instagram.com/herbsinnclinic/"
+                  className="bg-blue-100 p-3 rounded-full"
+                >
                   <img
                     src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
                     alt="Instagram"

@@ -151,8 +151,8 @@ export const footerLinks = [
     title: "Quick Links",
     links: [
       { text: "Home", url: "#" },
-      { text: "Best Sellers", url: "#" },
-      { text: "Offers & Deals", url: "#" },
+      { text: "Best Sellers", url: "#best-sellers" },
+      { text: "Offers & Deals", url: "/products" },
       { text: "Contact Us", url: "#" },
       { text: "FAQs", url: "#" },
     ],
@@ -160,19 +160,19 @@ export const footerLinks = [
   {
     title: "Need help?",
     links: [
-      { text: "Delivery Information", url: "#" },
+      { text: "Delivery Information", url: "/my-orders" },
       { text: "Return & Refund Policy", url: "#" },
-      { text: "Payment Methods", url: "#" },
-      { text: "Track your Order", url: "#" },
-      { text: "Contact Us", url: "#" },
+      { text: "Payment Methods", url: "/my-orders" },
+      { text: "Track your Order", url: "/my-orders" },
+      { text: "Contact Us", url: "/contact" },
     ],
   },
   {
     title: "Follow Us",
     links: [
-      { text: "Instagram", url: "#" },
+      { text: "Instagram", url: "https://www.instagram.com/herbsinnclinic/" },
       { text: "Twitter", url: "#" },
-      { text: "Facebook", url: "#" },
+      { text: "Facebook", url: "https://www.facebook.com/people/Herbs-Inn-Clinic/61564880276874/" },
       { text: "YouTube", url: "#" },
     ],
   },

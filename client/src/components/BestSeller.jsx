@@ -32,7 +32,10 @@ const BestSeller = () => {
   const { products } = useAppContext();
 
   return (
-    <div className="mt-8 sm:mt-12 md:mt-16 lg:mt-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div
+      id="best-sellers"
+      className="mt-8 sm:mt-12 md:mt-16 lg:mt-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto"
+    >
       <p className="text-xl sm:text-2xl md:text-3xl font-medium mb-4 sm:mb-6 md:mb-8">
         Best Seller
       </p>

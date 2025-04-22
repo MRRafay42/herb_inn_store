@@ -20,6 +20,17 @@ const MyOrders = () => {
       fetchMyOrders();
     }
   }, [user]);
+  //no login response//
+  if (!user) {
+    return (
+      <div className="mt-16 pb-16 flex justify-center items-center h-64">
+        <p className="text-xl text-gray-500">
+          Please login to view your orders which you have already placed.
+          <b>If you already Login place the order to view this order list</b>
+        </p>
+      </div>
+    );
+  }
 
   return (
     <div className="mt-16 pb-16">
