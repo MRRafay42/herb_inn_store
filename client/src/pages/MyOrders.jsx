@@ -26,7 +26,7 @@ const MyOrders = () => {
   if (!user) {
     return (
       <div className="mt-16 pb-16 flex justify-center items-center h-64">
-        <p className="text-xl text-gray-500">
+        <p className="text-xl text-green-500 text-bold">
           Please login to view your orders
         </p>
       </div>
@@ -43,7 +43,7 @@ const MyOrders = () => {
       {myOrders.length === 0 ? (
         <div className="flex flex-col items-center justify-center h-64">
           <p className="text-xl text-gray-500 mb-4">No orders yet</p>
-          <p className="text-gray-400">
+          <p className="text-green-400">
             Start shopping to see your orders here
           </p>
         </div>
