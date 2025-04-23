@@ -1,5 +1,6 @@
 import { Link, NavLink, Outlet } from "react-router-dom";
 import { assets } from "../../assets/assets";
+import logo from "../../assets/herbsinn.png";
 import { useAppContext } from "../../context/AppContext";
 import toast from "react-hot-toast";
 
@@ -33,12 +34,9 @@ const SellerLayout = () => {
     <>
       <div className="flex items-center justify-between px-4 md:px-8 border-b border-gray-300 py-3 bg-white transition-all duration-300">
         <Link to="/">
-          <img
-            src={assets.logo}
-            alt="logo"
-            className="cursor-pointer w-34 md:w-38"
-          />
+          <img src={logo} alt="logo" className="cursor-pointer w-34 md:w-24" />
         </Link>
+        <h1 className="text-lg font-bold">Seller Dashboard</h1>
         <div className="flex items-center gap-5 text-gray-500">
           <p>Hi! Admin</p>
           <button

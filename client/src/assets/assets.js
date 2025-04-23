@@ -186,8 +186,8 @@ export const features = [
   },
   {
     icon: leaf_icon,
-    title: "Freshness Guaranteed",
-    description: "Fresh produce straight from the source.",
+    title: "Quality Guaranteed",
+    description: "Quality Product straight from the source.",
   },
   {
     icon: coin_icon,
