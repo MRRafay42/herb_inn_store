@@ -6,7 +6,10 @@ const Categories = () => {
   const { navigate } = useAppContext();
   return (
     <div className="mt-16 ">
-      <p className="text-2xl md:text-3xl font-medium">Categories</p>
+      <p className="text-2xl md:text-3xl font-medium">
+        Categories
+        <div className="w-36 h-0.5 bg-primary rounded-full"></div>
+      </p>
       <div className="grid grid-col-2 sm:grid-col-3 md:grid-col-5 lg:grid-cols-6 xl:grid-col-7 mt-6 gap-6">
         {categories.map((category, index) => (
           <div

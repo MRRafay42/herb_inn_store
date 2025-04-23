@@ -4,14 +4,16 @@ import bottom_banner_image from "../assets/bootom_banner_new.png";
 
 const BottomBanner = () => {
   return (
-    <div className="relative mt-24 animate-pulse">
-      <p className=" text-center text-xl sm:text-2xl md:text-3xl font-medium mb-4 sm:mb-6 md:mb-8">
+    <div className="relative mt-24">
+      <p className=" text-center text-xl sm:text-2xl md:text-3xl font-medium mb-4 sm:mb-6 md:mb-8  rounded-2xl">
         Why Herb's Inn
+        <div className="w-full h-0.5 bg-primary rounded-full"></div>
       </p>
+
       <img
         src={bottom_banner_image}
         alt="banner"
-        className="w-auto h-80 hidden md:block"
+        className="w-auto h-80 hidden md:block rounded-tr-3xl"
       />
       <img
         src={bottom_banner_image}
