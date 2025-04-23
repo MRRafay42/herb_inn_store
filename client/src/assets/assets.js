@@ -104,13 +104,13 @@ export const assets = {
 export const categories = [
   {
     text: "Beauty Products",
-    path: "Vegetables",
+    path: "Beauty Products",
     image: beautyproducts,
     bgColor: "#FEF6DA",
   },
   {
     text: "Natural Supplements",
-    path: "Fruits",
+    path: "Natural Supplements",
     image: naturalsupplement,
     bgColor: "#FEE0E0",
   },
@@ -122,25 +122,25 @@ export const categories = [
   },
   {
     text: "Male Products",
-    path: "Instant",
+    path: "Male Products",
     image: maggi_image,
     bgColor: "#E1F5EC",
   },
   {
     text: "Female Products",
-    path: "Dairy",
+    path: "Female Products",
     image: dairy_product_image,
     bgColor: "#FEE6CD",
   },
   {
     text: "Bones & Joints",
-    path: "Bakery",
+    path: "Bones & Joints",
     image: bakery_image,
     bgColor: "#E0F6FE",
   },
   {
-    text: "Imune Systeam",
-    path: "Grains",
+    text: "Immune system",
+    path: "Immune system",
     image: grain_image,
     bgColor: "#F1E3F9",
   },
