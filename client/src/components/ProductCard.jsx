@@ -249,16 +249,14 @@ const ProductCard = ({ product }) => {
 
     // Set up interval to change the number every few seconds
     const interval = setInterval(() => {
-      const fluctuation = Math.floor(Math.random() * 5) - 2; // -2 to +2
-      const newCount = Math.max(
-        min,
-        Math.min(max, peopleWatching + fluctuation)
-      );
-      setPeopleWatching(newCount);
+      setPeopleWatching((prev) => {
+        const fluctuation = Math.floor(Math.random() * 5) - 2; // -2 to +2
+        return Math.max(min, Math.min(max, prev + fluctuation));
+      });
     }, 3000); // Change every 3 seconds
 
     return () => clearInterval(interval); // Clean up interval on unmount
-  }, [product._id, peopleWatching]);
+  }, [product._id]); // Removed peopleWatching from dependencies
 
   return (
     <div
