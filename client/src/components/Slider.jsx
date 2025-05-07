@@ -38,7 +38,7 @@ const Slider = () => {
   }, [banners.length]);
 
   return (
-    <div className="mt-28 relative w-full overflow-hidden">
+    <div className="mt-10 relative w-full overflow-hidden">
       {/* Carousel container */}
       <div
         className="flex transition-transform duration-500 ease-in-out"
@@ -56,7 +56,7 @@ const Slider = () => {
             <img
               src={banner.bgSm}
               alt={`banner-${index}-mobile`}
-              className="w-full h-auto md:hidden object-cover rounded-4xl mt-16 sm:mt-20"
+              className="w-full h-auto md:hidden object-cover rounded-4xl "
               style={{ minHeight: "300px" }}
             />
 
