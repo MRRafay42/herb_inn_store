@@ -21,6 +21,7 @@ import trust_icon from "./trust_icon.svg";
 import black_arrow_icon from "./black_arrow_icon.svg";
 import white_arrow_icon from "./white_arrow_icon.svg";
 import main_banner_bg from "./upperbanner.jpg";
+import middlebanner from "./middlebanner.jpg";
 import main_banner_bg_sm from "./upperbanner.jpg";
 import bottom_banner_image from "./bottom_banner_image.png";
 import bottom_banner_image_sm from "./bottom_banner_image_sm.png";
@@ -94,6 +95,7 @@ export const assets = {
   black_arrow_icon,
   white_arrow_icon,
   main_banner_bg,
+  middlebanner,
   main_banner_bg_sm,
   bottom_banner_image,
   bottom_banner_image_sm,
