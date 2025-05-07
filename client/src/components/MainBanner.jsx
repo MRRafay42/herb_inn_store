@@ -4,7 +4,9 @@ import { assets } from "../assets/assets";
 const MainBanner = () => {
   // Function to handle WhatsApp redirection
   const handleWhatsAppClick = () => {
-    const phoneNumber = "03004219745";
+    const localNumber = "03004219745"; // Pakistani local format
+    const countryCode = "92"; // Pakistan's country code without +
+    const phoneNumber = countryCode + localNumber.substring(1); // Removes leading 0
     const message = "Hello, I would like to book an appointment.";
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
       message
