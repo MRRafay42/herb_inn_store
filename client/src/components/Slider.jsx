@@ -50,13 +50,13 @@ const Slider = () => {
             <img
               src={banner.bg}
               alt={`banner-${index}`}
-              className="w-full h-auto hidden md:block object-cover rounded-4xl"
+              className="w-full h-auto hidden md:block object-cover rounded-2xl"
               style={{ minHeight: "400px", maxHeight: "600px" }}
             />
             <img
               src={banner.bgSm}
               alt={`banner-${index}-mobile`}
-              className="w-full h-auto md:hidden object-cover rounded-4xl "
+              className="w-full h-auto md:hidden object-cover rounded-2xl "
               style={{ minHeight: "300px" }}
             />
 
