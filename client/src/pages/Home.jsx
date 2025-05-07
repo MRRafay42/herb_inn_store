@@ -4,7 +4,7 @@ import Categories from "../components/Categories";
 import BestSeller from "../components/BestSeller";
 import BottomBanner from "../components/BottomBanner";
 import NewsLetter from "../components/NewsLetter";
-import Slider from "../components/slider";
+import Slider from "../components/Slider";
 
 const Home = () => {
   return (
