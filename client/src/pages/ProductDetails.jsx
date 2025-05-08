@@ -186,6 +186,7 @@ const ProductDetails = () => {
       ]);
     }
   }, [product]);
+  const openRouterApiKey = import.meta.env?.VITE_OPENROUTER_API_KEY;
 
   const handleSendMessage = async () => {
     if (!inputMessage.trim()) return;
@@ -202,8 +203,7 @@ const ProductDetails = () => {
         {
           method: "POST",
           headers: {
-            Authorization:
-              "Bearer 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",
+            Authorization: `Bearer ${openRouterApiKey}`,
             "HTTP-Referer": window.location.href,
             "X-Title": "E-Commerce Store",
             "Content-Type": "application/json",
